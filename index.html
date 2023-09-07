@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Alarm Clock</h1>
+
+        
+        <!-- Clock Face -->
+        <div class="text-center">
+            <div id="clock" class="alert alert-primary">
+            <!-- Elements to display hours, minutes, seconds, and AM/PM -->
+                 <div id="hour" class="display-4"></div>
+                <div class="h4">:</div>
+                <div id="minute" class="display-4"></div>
+                <div class="h4">:</div>
+                <div id="second" class="display-4"></div>
+                <div id="ampm" class="h4"></div>
+            </div>
+        </div>
+
+        <!-- analog clock -->
+        <div id = "clockContainer">
+            <div id="hour"></div>
+            <div id="minute"></div>
+            <div id="second"></div>
+        </div>
+
+
+        <!-- Set Alarm -->
+        <div class="mt-4">
+        <!-- Labels and input fields for setting the alarm time -->
+            <div class="form-row align-items-center justify-content-center">
+                <div class="col-auto">
+                    <label for="hourInput">Hour:</label>
+                    <input type="number" id="hourInput" class="form-control" min="1" max="12">
+                </div>
+                <div class="col-auto">
+                    <label for="minuteInput">Minute:</label>
+                    <input type="number" id="minuteInput" class="form-control" min="0" max="59">
+                </div>
+                <div class="col-auto">
+                    <label for="secondInput">Second:</label>
+                    <input type="number" id="secondInput" class="form-control" min="0" max="59">
+                </div>
+                <div class="col-auto">
+                    <label for="ampmInput">AM/PM:</label>
+                     <!-- AM and PM dropdown -->
+                    <select id="ampmInput" class="form-control">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+
+
+            <!-- Button to set the alarm -->
+                <div class="col-auto">
+                    <button type="button" class="btn btn-primary" onclick="setAlarm()">Set Alarm</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alarms List -->
+        <div class="mt-4">
+            <h4>Alarms List:</h4>
+            <ul id="alarmList" class="list-group"></ul>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
