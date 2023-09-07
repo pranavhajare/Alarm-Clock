@@ -26,6 +26,8 @@ An interactive web-based alarm clock created using HTML, CSS (Bootstrap), and Ja
 ## Preview
 
 ![Alarm Clock Preview]
+![Screenshot 2023-09-08 013302](https://github.com/pranavhajare/Alarm-Clock/assets/139987736/69af3049-9fc7-469c-835e-00aa4eadffe2)
+
 
 
 ## Technologies Used
