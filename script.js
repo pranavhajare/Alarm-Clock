@@ -83,7 +83,7 @@ function setAlarm() {
     // Check and alert for alarm
     setInterval(function() {
         const now = new Date();
-        const currentTime = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        const currentTime = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
 
         // If the current time matches the alarm time, trigger an alert and remove the alarm
         
